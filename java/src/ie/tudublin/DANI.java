@@ -59,7 +59,7 @@ public void printSonnetToScreen() {
 
 
 	
-    String[] sonnet;
+
 
     public String[] writeSonnet()
     {
@@ -88,7 +88,10 @@ public void printSonnetToScreen() {
 	}
 
 	public void keyPressed() {
-
+		if (keyPressed) {
+			sonnet = writeSonnet(); // generate a new sonnet
+			printSonnetToScreen(); // display the new sonnet on screen
+		}
 	}
 
 	float off = 0;
