@@ -22,6 +22,15 @@ public class Word {
     public void setWord(String word) {
         this.word = word;
     }
+
+    public void findFollower(String str) {
+        for (int i = 0; i < words.size(); i++) {
+            if (words.get(i).getWord() == str) {
+                return ;
+            }
+        }
+    
+    }
  
     
     @Override
